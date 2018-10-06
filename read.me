@@ -1,0 +1,17 @@
+Now the main advantage of the MVC architecture is that it very nicely decouples the presentation logic from the application logic with a controller in between them that control the actual app. And this is actually a bit similar to what we did with the Budgety app. But this time around we're gonna implement it with ES6 modules instead of using the module pattern that we used before. 
+
+Because using real modules is a lot easier and a more real separation of concerns. Now there are different ways of implementing the MVC pattern, some more complex than others, but we're gonna implementing in a very straightforward way here. 
+
+I just want you to know that if you Google around for MVC, then you will find it coded in some different ways, okay? But anyway let's now look at MVC in the context of our actual app. 
+
+So of course, we're gonna have a Controller which will have it's own file called index.js So again, this will be possible thanks to ES6 modules, which allow us to make our JavaScript apps more modular be separating different aspects of the app into the different app.
+
+Now about the Models, we will have one model for each of the different aspects of app, and the same goes for the views. So again, one View file for each part of the app. 
+
+In this first example, we have the Search functionality. So in the search Model is where we do Ajax calls to get recipes for a certain search query from an API. On the other hand, in the View is where we get the searhch query string from the user interface, and also where we print the results of the search. And the controller, of course, is waht brings these two together. so that Model and View never actually have to communicate. 
+
+And this will make the entire app, again, more modular and easier to maintain, as you will see when we start coding it. So as you see, the Model is always concerned about the data and the apps logic, while the View gets and displays data from, and to, the user interface, okay? 
+
+So that is in simple terms how MVC is going to work in our app. so there's always one model and one view ehld together by the overall controller.
+
+Now we could also have multiple controllers here but i find it easier to work with just one global controller and you will see why a bit later. 
